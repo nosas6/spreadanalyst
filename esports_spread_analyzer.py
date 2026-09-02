@@ -17,17 +17,7 @@ except Exception:
     from datetime import timezone, timedelta
     ET = timezone(timedelta(hours=-4))  # EDT fallback
 
-# ---------------------------------------------------------------------------
-# Token now comes from an environment variable so you never have to edit this
-# file again when it rotates. Set it once in your shell:
-#
-#   Windows (PowerShell):  $env:BETSAPI_TOKEN = "your-new-token"
-#   Windows (cmd):         set BETSAPI_TOKEN=your-new-token
-#   Mac/Linux:             export BETSAPI_TOKEN="your-new-token"
-#
-# Or just paste it into the fallback string below if you prefer the old way.
-# ---------------------------------------------------------------------------
-API_TOKEN = os.environ.get("BETSAPI_TOKEN", "257864-cASzmkF8ZpSxsq")
+API_TOKEN = os.environ.get("BETSAPI_TOKEN", "your_api_key_here")
 BASE_URL = "https://api.b365api.com/"
 
 # League / sport constants in one place so updates are easy
